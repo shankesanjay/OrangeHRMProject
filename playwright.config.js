@@ -7,6 +7,9 @@ import { TIMEOUT } from 'dns';
  * @see https://playwright.dev/docs/test-configuration
  */
 const config = ({
+
+  workers: 1,
+  FullyParallel : true,
   testDir: './tests',
   timeout: 40*1000,
   expect : 
