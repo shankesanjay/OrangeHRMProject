@@ -17,7 +17,7 @@ const config = ({
 
  use: {
   browserName : 'chromium',
-  headless : true,
+  headless : false,
   video : 'on',
   screenshot : 'only-on-failure',// Automatic scroonshot on failure
   trace: 'retain-onfailure',//collect trace on failure
