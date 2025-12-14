@@ -1,0 +1,18 @@
+# Node.js dependencies
+node_modules/
+
+# Playwright artifacts
+artifacts/
+playwright-report/
+test-results/
+
+# Logs
+reports/*.log
+reports/results.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env files (if any)
+.env

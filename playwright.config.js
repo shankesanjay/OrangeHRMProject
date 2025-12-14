@@ -16,7 +16,7 @@ const config = ({
   {
     timeout : 5000
   },
-  reporter : 'html',
+ reporter: [["html", { outputFolder: "playwright-report" }]],
 
  use: {
   browserName : 'chromium',
@@ -25,8 +25,9 @@ const config = ({
   screenshot : 'only-on-failure',// Automatic scroonshot on failure
   trace: 'retain-onfailure',//collect trace on failure
   viewreport: { width: 1280, height:720},
-  baseURL: process.env.BASE_URL|| 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index',
-
+  baseURL: 'https://opensource-demo.orangehrmlive.com/',
+  
+  
   ignoreHTTPErrors: true,
   
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
